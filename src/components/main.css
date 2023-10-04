@@ -45,6 +45,16 @@ header {
   margin: 5% 25%;
   border: 2px solid black;
 }
+.Template
+{
+  display:block;
+  border: #333 1px solid;
+  border-radius: 15px;
+  padding: 30px 10px;
+  margin: 5% 25%;
+
+  
+}
 .Card h2 {
   font-size: 22px;
   font-weight: 600;

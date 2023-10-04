@@ -4,6 +4,7 @@ import Button from './shared/Button'
 import RatingSelect from './RatingSelect'
 import './main.css'
 function FeedbackForm(props) {
+  const [text1,setText1]=useState('')
   const [text, setText] = useState('')
   const [rating, setRating] = useState(10)
   const [btnDisabled, setBtnDisabled] = useState(true)
@@ -29,6 +30,7 @@ function FeedbackForm(props) {
         text,
       }
       setText('')
+      setText1('')
     }
   }
   return (
@@ -56,7 +58,7 @@ function FeedbackForm(props) {
               type='text'
               placeholder='Write A Review'
               required
-              value={text}
+              value={text1}
             />
           </div>
           {message && <div className='message'>{message}</div>}
