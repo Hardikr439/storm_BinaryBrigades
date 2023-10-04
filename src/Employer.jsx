@@ -1,16 +1,8 @@
 import React, { Component } from "react";
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Chart from "react-apexcharts";
-
-
-
+import { Link } from "react-router-dom";
 function Employer(){
-    //const [count, setCount] = useState(0)
-
   return (
     <>
-
         <div class="container">
             <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
         <div class="col-md-3 mb-2 mb-md-0">
@@ -35,10 +27,12 @@ function Employer(){
         </div>
 
         <div class="d-flex gap-2 justify-content-center pb-5">
+  <Link to={'/form1'}>
   <button class="btn btn-success p-3 lh-1 mx-5" type="button">
     <svg class="bi" width="24" height="24"><use xlink:href="#x-lg"></use></svg>
     <span class="visually-hidden"><h4>CREATE A FORM</h4></span>
   </button>
+  </Link>
   <button class="btn btn-danger p-3 lh-1" type="button">
     <svg class="bi" width="24" height="24"><use xlink:href="#x-lg"></use></svg>
     <span class="visually-hidden"><h4>DELETE A FORM</h4></span>
@@ -77,7 +71,7 @@ function Employer(){
 
   <main class="col-md-5 ms-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom my-3">
-        <h1 class="h2 mx-5 text-primary">select a form name to view ---></h1>
+        <h1 class="h2 mx-5 text-primary">select a form name to view </h1>
         <div class="btn-toolbar mb-2 mb-md-0">
             <select class="form-select mx-2" id="country" required="">
                 <option value="">form name</option>
@@ -150,16 +144,9 @@ function Employer(){
           </tbody>
         </table>
       </div>
-    </main>
-
-
-    
+    </main> 
     </>
-  )
-  
+  ) 
 }
-
-
-
 export default Employer
 

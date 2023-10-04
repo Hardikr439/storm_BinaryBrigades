@@ -14,9 +14,7 @@ function CreateForm({handleAdd}) {
         setTitle(e.target.value)
       }
       const handleTextChange2=(e)=>{
-
        setq(e.target.value)
-       
       }
       const handleDate=(e)=>{
         setDate(e.target.value)
