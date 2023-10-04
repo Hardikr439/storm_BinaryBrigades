@@ -13,6 +13,7 @@ function App() {
     {
    setformData([...formData,NewFormData])
     }
+    console.log(formData)
   }
   return (
     <>
