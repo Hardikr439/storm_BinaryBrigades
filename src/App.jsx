@@ -7,28 +7,28 @@ import FeedbackForm from './components/FeedbackForm'
 import CreateForm from './components/CreateForm'
 import FormData from './components/FormData'
 import Employer from './Employer'
+import Navbar from './fixed/Navbar'
 function App() {
   const [formData, setformData] = useState(FormData)
   const addFormData = (NewFormData) => {
     if (window.confirm('Are you sure you want to add?')) {
       setformData([...formData, NewFormData])
     }
+    console.log(formData)
   }
   return (
     <>
-      {/* // <CreateForm handleAdd={addFormData}/> */}
-
       <Router>
+        <Navbar />
         <Routes>
+          <Route exact path='/' element={<LandingPage />} />
           <Route
             path='/form1'
             element={<CreateForm handleAdd={addFormData} />}
           />
-          <Route path='/' element={<LandingPage />} />
-          {/* <Route path='/form3' element={<FeedbackForm />} />   */}
+          <Route exact path='/employer' element={<Employer />} />
         </Routes>
       </Router>
-      {/* <Employer /> */}
     </>
   )
 }
