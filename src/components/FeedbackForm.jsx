@@ -35,28 +35,31 @@ function FeedbackForm() {
     }
     }
   return (
+    <div className="center"> 
     <Card>
         <form onSubmit={handleSumbit}>
          <h2>How would you rate your service with us?</h2>
          <RatingSelect select={(rating)=>{setRating(rating)}} />
          <div className="input-group">          
             <input onChange={handleTextChange} type="text" placeholder="Write A Review" required value={text}/>
-            <Button type="submit" isDisabled={btnDisabled}>Submit</Button>
+            {/* <Button type="submit" isDisabled={btnDisabled}>Submit</Button> */}
          </div>
-         <div className="input-group"><input onChange={handleTextChange} type="text" placeholder="Write A Review" required value={text}/></div>
-         
          {message && <div className="message">{message}</div>}
+         <div className="input-group"><input onChange={handleTextChange} type="text" placeholder="Write A Review" required value={text}/></div>
           <div>
-            <h2>GENDER</h2>
+            <h3>Gender</h3>
           </div>
-          <input type="radio" name="gender" value='Male'/>
-           Male
-          <input  type='radio' name="gender" value='Female'/>
-           Female
-          <input type="radio" name="gender" value='Others'/>
-           Others
+          <div className="gender"><div><input type="radio" name="gender" value='Male' />
+           Male</div>
+           <div> <input  type='radio' name="gender" value='Female'/>
+           Female</div>
+         <div><input type="radio" name="gender" value='Others'/>
+           Others</div>
+          </div>
+          
         </form>
     </Card>
+    </div>
   )
 }
 
