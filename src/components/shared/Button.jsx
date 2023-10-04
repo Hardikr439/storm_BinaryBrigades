@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-function Button({ children, version, type, isDisabled }) {
+function Button() {
   return (
     <button
       type={type}
