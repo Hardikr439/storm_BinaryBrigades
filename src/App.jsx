@@ -1,11 +1,11 @@
 import { useState } from 'react'
 
-import './main.css'
-import FeedbackForm from './components/FeedbackForm'
+import './landingPage.css'
+import LandingPage from './landingPage'
 function App() {
   return (
     <>
-     <FeedbackForm />
+     <LandingPage />
     </>
   )
 }
