@@ -51,3 +51,25 @@
 #myStrong {
   color: green;
 }
+
+#ReviewCard{
+   background-color: lightgreen;
+   width: 75%;
+   justify-content: center;
+}
+
+#Review{
+  justify-content: center;
+}
+
+
+
+#ReviewCard h1{
+  font-size: 15px;
+}
+#BestEmp{
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  gap: 5px;
+}
