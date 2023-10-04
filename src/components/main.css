@@ -8,8 +8,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #147e81;
-  color: #fff;
+  background-color: white;
+  color: black;
   line-height: 1.6;
 }
 
@@ -17,7 +17,7 @@ ul {
   list-style: none;
 }
 
-.container {
+.Container {
   max-width: 768px;
   margin: auto;
   padding: 0 20px;
@@ -31,21 +31,21 @@ header {
   align-items: center;
   margin-bottom: 30px;
 }
-.center
-{
+.center {
   text-align: center;
 }
-.card {
+.Card {
   display: flex;
   justify-content: space-around;
-  width:50%;
+  width: 50%;
   background-color: #fff;
-  color: #333;
+  color: black;
   border-radius: 15px;
   padding: 30px 10px;
   margin: 5% 25%;
+  border: 2px solid black;
 }
-.card h2 {
+.Card h2 {
   font-size: 22px;
   font-weight: 600;
   text-align: center;
@@ -68,7 +68,7 @@ header {
   border-radius: 50%;
   font-size: 18px;
   border: 1px #eee solid;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .rating li label {
@@ -84,7 +84,7 @@ header {
 }
 
 .rating li:hover {
-  background:blue;
+  background: blue;
   color: #fff;
 }
 .rating input[type='radio'] {
@@ -92,16 +92,14 @@ header {
 }
 
 .rating input[type='radio']:checked ~ label {
-  background:blue;
+  background: blue;
   color: #fff;
 }
-h3
-{
+h3 {
   text-align: left;
 }
-.gender
-{
-  display:flex;
+.gender {
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
@@ -139,7 +137,7 @@ input:focus {
   right: 40px;
 }
 
-.btn {
+.btn-1 {
   color: #fff;
   border: 0;
   border-radius: 8px;
@@ -149,26 +147,26 @@ input:focus {
   cursor: pointer;
 }
 
-.btn-primary {
+.btn-primary-1 {
   background-color: #202142;
 }
 
-.btn-secondary {
+.btn-secondary-1 {
   background: #ff6a95;
 }
 
-.btn:hover {
+.btn-1:hover {
   transform: scale(0.98);
   opacity: 0.9;
 }
 
-.btn:disabled {
+.btn-1:disabled {
   background-color: #cccccc;
   color: #333;
   cursor: auto;
 }
 
-.btn:disabled:hover {
+.btn-1:disabled:hover {
   transform: scale(1);
   opacity: 1;
 }
@@ -182,10 +180,9 @@ input:focus {
   .rating li {
     margin: 10px 10px;
   }
-  .card
-  {
-    margin:10% 5%;
-    width:90%;
+  .card {
+    margin: 10% 5%;
+    width: 90%;
   }
   .rating {
     display: flex;
