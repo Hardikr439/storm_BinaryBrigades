@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
-function Card(props) {
+function Card({children}) {
   return (
-    <div className='Card' style={{ backgroundColor: `${props.color}` }}>
-      {props.children}
+    <div className='Card'>
+      {children}
     </div>
   )
 }
@@ -11,6 +11,5 @@ Card.defaultProps = {
 }
 Card.propTypes = {
   children: PropTypes.node.isRequired,
-  reverse: PropTypes.bool,
 }
 export default Card

@@ -1,7 +1,11 @@
 import { useState } from 'react'
+<<<<<<< HEAD
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './landingPage.css'
+=======
+import './LandingPage.css'
+>>>>>>> 781d9cf6b45f8df711003fd516c309ecd4f80b2d
 import { Link } from 'react-router-dom'
 
 function LandingPage() {
