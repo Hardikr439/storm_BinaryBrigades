@@ -1,0 +1,34 @@
+#main-myCards {
+  background-color: rgba(113, 183, 240, 0.75);
+  padding: 10px;
+  box-shadow: 10px 15px 10px 0 rgba(0, 0, 0, 0.2),
+    10px 15px 10px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+}
+#myCards {
+  color: white;
+  background-color: rgb(33, 33, 143);
+  padding: 14px 10px 0px 30px;
+  border-radius: 20px;
+  box-shadow: 10px 11px 5px 0 rgba(1, 0, 8, 0.2),
+    10px 11px 5px 0 rgba(13, 3, 104, 0.2);
+}
+#deleteButton {
+  font-size: 13px;
+  border-radius: 20px;
+  box-shadow: 10px 15px 5px 0 rgba(1, 0, 8, 0.2),
+    10px 15px 5px 0 rgba(13, 3, 104, 0.2);
+}
+#myText {
+  text-shadow: 2px 2px #686868;
+  font-size: 15px;
+}
+#loadForms {
+  font-size: 15px;
+  padding-left: 20px;
+  color: blue;
+  text-decoration: none;
+}
+#loadForms:hover {
+  color: white;
+}
