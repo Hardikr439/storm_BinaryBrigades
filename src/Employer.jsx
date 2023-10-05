@@ -1,103 +1,82 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import './Employer.css'
 function Employer() {
   return (
     <>
-      <div class='d-flex gap-2 justify-content-center pb-5'>
+      <div class='d-flex gap-2 justify-content-center p-5'>
         <Link to={'/form1'}>
-          <button class='btn btn-success p-3 lh-1 mx-5' type='button'>
-            <svg class='bi' width='24' height='24'>
-              <use xlink:href='#x-lg'></use>
-            </svg>
+          <button class='btn btn-success p-4 lh-1 mx-5' type='button'>
             <span class='visually-hidden'>
-              <h4>CREATE A FORM</h4>
+              <h4>CREATE NEW FORM</h4>
             </span>
           </button>
         </Link>
-        <button class='btn btn-danger p-3 lh-1' type='button'>
-          <svg class='bi' width='24' height='24'>
-            <use xlink:href='#x-lg'></use>
-          </svg>
-          <span class='visually-hidden'>
-            <h4>DELETE A FORM</h4>
-          </span>
-        </button>
       </div>
 
-      <div class='mx-5 my-3 p-3 bg-body border-primary rounded shadow-sm'>
-        <h6 class='border-bottom pb-2 mb-0 text-success text-center'>
+      <div class='mx-5 bg-body border-primary  ' id='main-myCards'>
+        <h6 class='border-bottom pb-2  my-1 text-center'>
           Created & active forms
         </h6>
-        <div class='d-flex text-body-secondary pt-3 mx-4'>
-          <svg
-            class='bd-placeholder-img flex-shrink-0 me-2 rounded'
-            width='32'
-            height='32'
-            xmlns='http://www.w3.org/2000/svg'
-            role='img'
-            aria-label='Placeholder: 32x32'
-            preserveAspectRatio='xMidYMid slice'
-            focusable='false'
-          >
-            <title>Placeholder</title>
-            <rect width='100%' height='100%' fill='#007bff'></rect>
-            <text x='50%' y='50%' fill='#007bff' dy='.3em'>
-              32x32
-            </text>
-          </svg>
-          <p class='pb-3 mb-0 small lh-sm border-bottom mx-2'>
-            <strong class='d-block text-gray-dark'>Industry visit form</strong>
-            Google headoffice visit on 12th august
-          </p>
+        <div
+          class='d-flex text-body-secondary pt-3 mx-4 justify-content-between'
+          id='myCards'
+        >
+          <div className='d-flex'>
+            <p class='pb-3 mb-0 small lh-sm border-bottom mx-2' id='myText'>
+              <strong class='d-block text-gray-dark'>
+                Industry visit form
+              </strong>
+              Google headoffice visit on 12th august
+            </p>
+          </div>
+          <div>
+            <button class='btn btn-danger mt-0' type='button' id='deleteButton'>
+              <span class='visually-hidden'>DELETE FORM</span>
+            </button>
+          </div>
         </div>
-        <div class='d-flex text-body-secondary pt-3 mx-4'>
-          <svg
-            class='bd-placeholder-img flex-shrink-0 me-2 rounded'
-            width='32'
-            height='32'
-            xmlns='http://www.w3.org/2000/svg'
-            role='img'
-            aria-label='Placeholder: 32x32'
-            preserveAspectRatio='xMidYMid slice'
-            focusable='false'
-          >
-            <title>Placeholder</title>
-            <rect width='100%' height='100%' fill='#e83e8c'></rect>
-            <text x='50%' y='50%' fill='#e83e8c' dy='.3em'>
-              32x32
-            </text>
-          </svg>
-          <p class='pb-3 mb-0 small lh-sm border-bottom mx-2'>
-            <strong class='d-block text-gray-dark'>Client meeting form</strong>
-            Meeting with the Walmart CE0
-          </p>
+        <div
+          class='d-flex text-body-secondary pt-3 mx-4 my-3 justify-content-between'
+          id='myCards'
+        >
+          <div className='d-flex'>
+            <p class='pb-3 mb-0 small lh-sm border-bottom mx-2' id='myText'>
+              <strong class='d-block text-gray-dark'>
+                Client meeting form
+              </strong>
+              Meeting with the Walmart CE0
+            </p>
+          </div>
+          <div>
+            <button class='btn btn-danger mt-0' type='button' id='deleteButton'>
+              <span class='visually-hidden'>DELETE FORM</span>
+            </button>
+          </div>
         </div>
-        <div class='d-flex text-body-secondary pt-3 mx-4'>
-          <svg
-            class='bd-placeholder-img flex-shrink-0 me-2 rounded'
-            width='32'
-            height='32'
-            xmlns='http://www.w3.org/2000/svg'
-            role='img'
-            aria-label='Placeholder: 32x32'
-            preserveAspectRatio='xMidYMid slice'
-            focusable='false'
-          >
-            <title>Placeholder</title>
-            <rect width='100%' height='100%' fill='#6f42c1'></rect>
-            <text x='50%' y='50%' fill='#6f42c1' dy='.3em'>
-              32x32
-            </text>
-          </svg>
-          <p class='pb-3 mb-0 small lh-sm border-bottom mx-2'>
-            <strong class='d-block text-gray-dark'>Ongoing project form</strong>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-            consequatur quibusdam ipsum illum nulla perferendis nemo amet eum
-            similique rerum!
-          </p>
+        <div
+          class='d-flex text-body-secondary pt-3 mx-4 justify-content-between'
+          id='myCards'
+        >
+          <div className='d-flex'>
+            <p class='pb-3 mb-0 small lh-sm border-bottom mx-2' id='myText'>
+              <strong class='d-block text-gray-dark '>
+                Ongoing project form
+              </strong>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              consequatur quibusdam ipsum illum nulla perferendis nemo
+            </p>
+          </div>
+          <div>
+            <button class='btn btn-danger mt-0' type='button' id='deleteButton'>
+              <span class='visually-hidden'>DELETE FORM</span>
+            </button>
+          </div>
         </div>
         <small class='d-block text-end mt-3'>
-          <a href='#'>load more forms</a>
+          <a href='#' id='loadForms'>
+            load more forms
+          </a>
         </small>
       </div>
 
@@ -115,7 +94,6 @@ function Employer() {
             </select>
           </div>
         </div>
-        <br></br>
 
         <h2 class='text-center text-primary'>Check out the responses</h2>
         <div class='table-responsive small mx-5'>
