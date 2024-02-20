@@ -1,11 +1,14 @@
-import { useState } from 'react'
+import { useState ,useContext } from 'react'
+import {Link} from 'react-router-dom'
 import Template from './shared/template'
+import DataContext from '../Context/DataContext'
 function CreateForm({ handleAdd }) {
   const [heading, setHeading] = useState('')
   const [title, setTitle] = useState('')
   const [date, setDate] = useState('')
   const [questions, setQuestions] = useState([])
   const [q, setq] = useState('')
+  const { Data ,addData}=useContext(DataContext)
   const handleTextChange = (e) => {
     setHeading(e.target.value)
   }
@@ -31,10 +34,11 @@ function CreateForm({ handleAdd }) {
       date: { date },
       qa: { questions },
     }
-    handleAdd(NewFormData)
+    addData(NewFormData)
     setHeading('')
     setTitle('')
     setQuestions('')
+
   }
 
   return (
@@ -78,15 +82,16 @@ function CreateForm({ handleAdd }) {
         >
           ADD QUESTION
         </button>
+        <Link to='/'>
         <button
           onClick={handleSubmit}
           className='btn btn-large btn-block btn-outline-primary mt-3 '
         >
           Submit
         </button>
+        </Link>
       </Template>
     </>
   )
 }
-
 export default CreateForm

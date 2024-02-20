@@ -1,5 +1,4 @@
 import { useState } from 'react'
-
 import './landingPage.css'
 import LandingPage from './landingPage'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
@@ -9,7 +8,8 @@ import FormData from './components/FormData'
 import Employer from './Employer'
 import Navbar from './fixed/Navbar'
 function App() {
-  const [formData, setformData] = useState(FormData)
+  
+  
   const addFormData = (NewFormData) => {
     if (window.confirm('Are you sure you want to add?')) {
       setformData([...formData, NewFormData])
