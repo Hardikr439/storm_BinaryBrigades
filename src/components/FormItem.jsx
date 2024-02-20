@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 import '../landingPage.css'
 import Card from './shared/Card'
 import { PropTypes } from 'prop-types'
-function FormItem({item}) {
+function FormItem({item, heading}) {
   return (
     <Card>
         <div key={item.title}>{item.title}</div>
-        <div key={item.heading}>{item.heading}</div>
+        <div key={heading}>{item.heading}</div>
         <div key={item.date}>{item.date}</div>
     {/* // <div className='col' id='myCard'>
     //       <div className='card mb-4 rounded-3 border-primary' id='inMyCard'>

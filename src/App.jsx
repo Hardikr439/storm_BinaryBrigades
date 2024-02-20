@@ -7,28 +7,23 @@ import CreateForm from './components/CreateForm'
 import FormData from './components/FormData'
 import Employer from './Employer'
 import Navbar from './fixed/Navbar'
+import { DataProvider } from './Context/DataContext'
 function App() {
-  
-  
-  const addFormData = (NewFormData) => {
-    if (window.confirm('Are you sure you want to add?')) {
-      setformData([...formData, NewFormData])
-    }
-    console.log(formData)
-  }
   return (
     <>
-      <Router>
+    <DataProvider>
+    <Router>
         <Navbar />
         <Routes>
           <Route exact path='/' element={<LandingPage />} />
           <Route
             path='/form1'
-            element={<CreateForm handleAdd={addFormData} />}
+            element={<CreateForm />}
           />
           <Route exact path='/employer' element={<Employer />} />
         </Routes>
       </Router>
+    </DataProvider>
     </>
   )
 }

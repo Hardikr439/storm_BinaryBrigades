@@ -29,9 +29,9 @@ function CreateForm({ handleAdd }) {
   const handleSubmit = (e) => {
     e.preventDefault()
     const NewFormData = {
-      heading: { heading },
-      title: { title },
-      date: { date },
+      heading:  heading ,
+      title: title ,
+      date:  date,
       qa: { questions },
     }
     addData(NewFormData)

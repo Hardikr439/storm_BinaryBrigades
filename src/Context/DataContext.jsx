@@ -1,6 +1,6 @@
 import { createContext,useState } from "react"
 const DataContext =createContext()
-export const FeedbackProvider =({children})=>{
+export const DataProvider =({children})=>{
     const [Data,setData] = useState(
         [
             {
@@ -12,14 +12,14 @@ export const FeedbackProvider =({children})=>{
     )
     const addData=(newData)=>{
         if(window.confirm('Are you sure you want to add?')){
-           setData([newFeedBack,...feedback])
+           setData([newData,...Data])
         }   
     } 
-    return <FeedbackContext.Provider value={{
+    return <DataContext.Provider value={{
         Data,
         addData
         }}>
             {children}
-        </FeedbackContext.Provider>
+        </DataContext.Provider>
     }
     export default DataContext
